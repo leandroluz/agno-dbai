@@ -1,0 +1,30 @@
+# Ambiente virtual
+venv/
+
+# Arquivos de configuração e segurança
+.env
+.env.*
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Banco de memória local
+/tmp/
+*.db
+
+# Arquivos temporários
+*.log
+*.bak
+*.swp
+
+# Streamlit
+.streamlit/
+
+# VSCode
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
