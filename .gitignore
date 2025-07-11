@@ -3,6 +3,7 @@ venv/
 
 # Arquivos de configuração e segurança
 .env
+!/.env.example
 .env.*
 
 # Cache do Python

@@ -13,7 +13,7 @@ load_dotenv()
 
 # Define o modelo
 model = OpenAIChat(
-    id="gpt-4o", 
+    id=os.getenv("OPENAI_MODEL", "gpt-4o"),
     api_key=os.getenv("OPENAI_API_KEY")
 )
 

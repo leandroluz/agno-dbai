@@ -31,14 +31,22 @@ pip install -r requirements.txt
 ```
 
 ### 4. Configure seu arquivo `.env`
-Crie um arquivo `.env` com o seguinte conteúdo:
+Um arquivo `\.env.example` acompanha o projeto com as variáveis necessárias. Copie
+esse arquivo para `\.env` e edite com suas credenciais:
+
+```bash
+cp .env.example .env
+```
+
+O arquivo de exemplo possui o seguinte formato:
 
 ```env
-OPENAI_API_KEY=sk-sua-chave-aqui
+OPENAI_API_KEY=your-openai-key
 OPENAI_MODEL=gpt-4o
 ```
 
 > Use `gpt-4o` ou `gpt-3.5-turbo` conforme sua assinatura da OpenAI.
+Defina a variável `OPENAI_MODEL` para usar outro modelo; caso omita, o padrão é `gpt-4o`.
 
 ### 5. Rode a aplicação
 ```bash
